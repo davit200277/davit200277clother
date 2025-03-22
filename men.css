@@ -1,0 +1,21 @@
+.custom-btn:hover{
+    background-color: black !important;
+    color: yellowgreen !important;
+} 
+p:hover{
+    color: #4C4C4C;
+}
+
+@font-face {
+    font-family:"simple-text" ;
+    src: url(Fonts/foubralofont.ttf);
+
+    font-family:"price-text" ;
+    src: url(Fonts/fasebisfont.ttf);
+
+    font-family: "second-header-text";
+    src: url(Fonts/meoresataurifont.ttf);
+
+    font-family: "header-text";
+    src: url(Fonts/sataurifont.ttf);
+}
