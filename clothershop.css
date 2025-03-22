@@ -1,0 +1,207 @@
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+@font-face {
+    font-family:"simple-text" ;
+    src: url(Fonts/foubralofont.ttf);
+
+    font-family:"price-text" ;
+    src: url(Fonts/fasebisfont.ttf);
+
+    font-family: "second-header-text";
+    src: url(Fonts/meoresataurifont.ttf);
+
+    font-family: "header-text";
+    src: url(Fonts/sataurifont.ttf);
+}
+
+@keyframes daviti {
+    from{
+        transform: translatex(0px);
+    }
+    to{
+        transform: translatex(-250px);
+    }   
+ }
+ @keyframes daviti-below {
+    from{
+        transform: translatex(0px);
+        
+    }
+    to{
+        transform: translatex(250px);
+    }
+ }
+ @keyframes stop {
+    from {
+        transform: translatex(0px);
+    }
+    to {
+        transform: translatex(0px);
+    } 
+ }
+
+.header{
+    top: 0;
+}
+
+a{
+    color: goldenrod !important;
+    text-decoration: none !important;
+}
+
+.custom-btn:hover{
+    background-color: black !important;
+    color: yellowgreen !important;
+} 
+
+.custom-btn, .custom-search:focus{
+    transform: scale(0.9);
+}
+
+.headerboxside{
+    background-image: url(photos/women-clothes.webp);
+}
+
+.headerboxside, .headerboxside2, .headerboxside1{
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+
+.headerboxside > h1{
+    font-size:92px ;
+    font-weight: bolder;
+}
+
+.headerboxside1{
+    background-image: url(photos/men-clother1.webp);
+}
+
+.headerboxside1 > h1{
+    font-size:92px ;
+    font-weight: bolder;
+}
+
+.headerboxside2{
+    background-image: url(photos/new-clothes.jpg);
+}
+
+.headerboxside2 > h1{
+    font-size:92px ;
+    font-weight: bolder;
+}
+
+.custom-dark, .custom-dark1{
+   width: 400px; 
+   -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px); 
+    cursor: pointer;
+}
+
+.custom-dark{
+    animation: daviti 3s infinite;
+}
+
+.custom-dark1{
+    animation: daviti-below 3s infinite;
+}
+
+ .custom-dark:hover{
+ animation: stop ;
+}
+
+.custom-dark1:hover{
+    animation: stop;
+}
+
+.box1, .box2, .box3, .box4, .photoside1, .photoside2, .photoside3{
+    background-image: url(photos/guessing.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.box1:hover{
+    background-image:url(photos/guess1.avif) ;
+}
+
+.box2:hover{
+    background-image:url(photos/guess2.avif) ;
+}
+
+.box3:hover{
+    background-image:url(photos/guess3.avif) ;
+}
+
+.box4:hover{
+    background-image:url(photos/guess4.avif) ;
+}
+
+.box1, .box2, .box3, .box4:hover{
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    cursor: pointer;
+}
+
+.cont1{
+    position: sticky;
+    width: 400px; 
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+}
+
+img{
+    cursor: pointer;
+}
+
+h1, h2, h3, h4, h5, h6 p {
+    cursor: pointer;
+}
+
+@media screen and (max:768px) {
+    .header{
+        transform: scale(0.75);
+        margin-left: 200px !important;
+    }
+    .header2{
+        transform: scale(1.5);
+    }
+    .headerboxside{
+        width: 100% !important;
+    }
+    .headertextside1{
+        transform: scale(1) !important;;
+    }
+    .custom-dark{
+        transform: scale(0.7);
+        margin-bottom: -100px !important;
+    }
+}
+
+.photoside1{
+    background-image: url(photos/woman-side1.avif) !important;
+}
+
+.photoside2{
+    background-image: url(photos/clothes-side1.avif);
+}
+
+.photoside3{
+    background-image: url(photos/men=side1.avif);
+}
+
+.photoside1:hover{
+    background-image: url(photos/woman-side1hide.png) !important;
+}
+
+.photoside2:hover{
+    background-image: url(photos/clotheshide.png);
+}
+
+.photoside3:hover{
+    background-image: url(photos/men=sidehide.jpg);
+}
+
+p h1, h2, h3, h4, h5, h6, span:hover{
+    color: #4C4C4C;
+}
